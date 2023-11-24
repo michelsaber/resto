@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Footer() {
   return (
-    <div className='container '><p className='text-white bg-success'>Footer</p>
+    <div className='fluid-container '><p className='text-white bg-success'>Footer</p>
          <Button variant='primary'>click here</Button>
     </div>
   )
