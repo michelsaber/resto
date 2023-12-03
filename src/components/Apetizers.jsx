@@ -8,7 +8,7 @@ import nachos from "../public/nachos.jpg"
 
 function Apetizers() {
   return (
-    <div className='fluid-container '><h3>Apetizers</h3>
+    <div className='fluid-container text-secondary'><h3 >Apetizers</h3>
     <div className='fluid-container d-flex flex-wrap justify-content-around'>
     
     <div><h5>Cheese Garlic Bread</h5>

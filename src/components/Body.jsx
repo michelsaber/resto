@@ -4,11 +4,12 @@ import Accordion from 'react-bootstrap/Accordion';
 import Apetizers from './Apetizers';
 import Dishes from './Dishes';
 import Drinks from './Drinks';
+import Background from "../public/background.jpg"
 
 function Body() {
   return (
     <div className='fluid-container bg-secondary'>
-      <Accordion className='--bs-success '>
+      <Accordion  className=' bg-dark border-bottom border-body' data-bs-theme="dark">
       <Accordion.Item style={{color:"white", backgroundColor:"grey"}} eventKey="0">
         <Accordion.Header >The Key to Fine Dining</Accordion.Header>
         <Accordion.Body>
@@ -34,7 +35,8 @@ function Body() {
         </Accordion.Body>
       </Accordion.Item>
       </Accordion>
-    <div className='fluid-container bg-secondary'>
+      <div className='fluid-container' style = {{backgroundImage: `url(${Background})`, backgroundSize: "cover", backgroundRepeat: "no-repeat",  height: "70vw"}}><h1 >The Key to Perfection</h1></div>
+    <div className=' bg-dark border-bottom border-body' data-bs-theme="dark">
       <Apetizers></Apetizers>
       <Dishes></Dishes>
       <Drinks></Drinks>
